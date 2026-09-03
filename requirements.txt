@@ -7,4 +7,4 @@ uvicorn
 streamlit
 pytest
 matplotlib
-ruff
+ruff==0.12.0
