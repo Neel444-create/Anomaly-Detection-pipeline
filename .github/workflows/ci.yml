@@ -8,6 +8,9 @@ jobs:
   test:
     name: Lint and test
     runs-on: ubuntu-latest
+    env:
+      # Keep imports deterministic when tests run on a fresh GitHub runner.
+      PYTHONPATH: ${{ github.workspace }}
 
     steps:
       - name: Check out source
@@ -22,16 +25,16 @@ jobs:
         run: python -m pip install --upgrade pip && python -m pip install -r requirements.txt
 
       - name: Check lint rules
-        run: ruff check .
+        run: python -m ruff check .
 
       - name: Check formatting
-        run: ruff format --check .
+        run: python -m ruff format --check .
 
       - name: Run test suite
-        run: pytest -q
+        run: python -m pytest -q
 
       - name: Run data-pipeline tests
-        run: pytest -q tests/test_data.py
+        run: python -m pytest -q tests/test_data.py
 
   docker:
     name: Build Docker image
