@@ -2,7 +2,7 @@
 
 ## Project overview
 
-An end-to-end, student-level MLOps portfolio project for detecting anomalous credit-card transactions. It covers reproducible data preparation, baseline modeling, MLflow experiment tracking, a FastAPI inference service, Docker packaging, CI, drift monitoring, candidate retraining decisions, and a Streamlit dashboard—without unnecessary cloud infrastructure.
+An end-to-end, MLOps portfolio project for detecting anomalous credit-card transactions. It covers reproducible data preparation, baseline modeling, MLflow experiment tracking, a FastAPI inference service, Docker packaging, CI, drift monitoring, candidate retraining decisions, and a Streamlit dashboard—without unnecessary cloud infrastructure.
 
 ## Problem statement
 
