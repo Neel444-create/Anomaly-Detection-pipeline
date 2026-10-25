@@ -2,6 +2,8 @@
 
 An end-to-end machine learning project that detects potentially fraudulent credit-card transactions and demonstrates how an ML model can be prepared, served, monitored, and evaluated over time.
 
+“I built an end-to-end credit-card fraud detection pipeline. I started by validating and preprocessing the transaction data, then trained and compared Logistic Regression and Random Forest models using metrics suitable for imbalanced datasets. I used MLflow to track experiments, FastAPI to serve predictions, and Streamlit to visualize results. I also implemented PSI-based data drift monitoring and a controlled retraining workflow to evaluate new model candidates.”
+
 ## 1. Problem
 
 Credit-card fraud is rare compared with legitimate transactions. Because of this class imbalance, accuracy alone can hide poor fraud detection. This project compares models using precision, recall, F1-score, ROC-AUC, and especially PR-AUC.
